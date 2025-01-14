@@ -1,3 +1,34 @@
 :host {
-  display: block;
+  display: grid;
+  grid-template-areas: "stack";
+}
+
+.banner-img {
+  grid-area: stack;
+}
+
+.info {
+  grid-area: stack;
+
+  display: grid;
+  align-content: start;
+  place-self: center start;
+  gap: 1.25em;
+  width: min(90%, 35ch);
+  padding: 32px 24px;
+  margin-inline: 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 12px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 1em;
 }
